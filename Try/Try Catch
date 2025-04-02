@@ -1,0 +1,23 @@
+//chp 13 Exceptions
+ //are errors during execution of a program
+ //handle with try-catch in code block
+fun main() {
+     // try {
+     // val result = 10 / 0
+     // }catch (e: Exception){
+     // println("Exception: ${e.message}")
+     // }
+
+     try {
+         val data = "123a"
+         val number = data.toInt()
+         println("number")
+     } catch (e: ArithmeticException) {
+         println("ExceptionDetail: ${e}")
+
+     } catch (e: Exception) {
+         println("Exception: ${e}")
+     } finally {
+         println("It will always be executed")
+     }
+ }
